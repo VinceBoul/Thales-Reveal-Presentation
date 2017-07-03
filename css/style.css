@@ -1,0 +1,102 @@
+.white{
+	color:white !important;
+}
+.white_back{
+	background-color: rgba(255, 255, 255, 0.55);
+	color:#333;
+}
+
+
+/* IMAGES */
+#logo_thales{
+	display:none;
+    height: 50px;
+	margin-top: 10px;
+}
+#logo_cesi{
+	height: 50px;
+	margin-top: 10px;
+}
+
+#search{
+	display: none;
+}
+
+/* SLIDE 1 */
+.name{
+	margin-top: 110px !important;
+}
+.sub_title_white{
+    background-color: rgba(255, 255, 255, 0.56);
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.sub_title_border{
+    border: 1px solid black !important;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/* SLIDE FOL */
+.spt_graph{
+    position: absolute;
+    top: 35px;
+    left: -304px;
+    height: 290px;
+}
+.edit_action{
+    position: absolute;
+    top: 320px;
+    left: 600px;
+}
+.rec_import{
+	position: absolute;
+    top: 344px;
+    left: 26px;
+    height: 290px;
+}
+
+/* SLIDE CONCLUSION */
+.apside{
+    height: 113px;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.footer{
+    position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 70px;
+    background-color: rgba(255, 255, 255, 0.38);
+}	
+.header{
+	display: none;
+    position: absolute;
+	top: 0;
+    font-family: "Lato", sans-serif;
+    width: 100%;
+    padding-top: 10px;
+    z-index: 1;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.38);
+}	
+.dark{
+    background-color: rgb(51, 51, 51);
+    color: #fbf8e8;
+}
+
+.light{
+    background-color: rgba(255, 255, 255, 0.38);
+    color: #333333;
+}
+
+.server_logos .item{
+	padding: 4px;
+}
+.server_logos .item img{
+	height: 200px;
+	box-shadow: none;
+	border: none;
+}
