@@ -23,80 +23,183 @@
 }
 
 /* SLIDE 1 */
-.name{
-	margin-top: 110px !important;
-}
+
 .sub_title_white{
     background-color: rgba(255, 255, 255, 0.56);
     margin-left: 10%;
     margin-right: 10%;
 }
-
 .sub_title_border{
     border: 1px solid black !important;
     margin-left: 10%;
     margin-right: 10%;
 }
 
-/* SLIDE FOL */
-.spt_graph{
-    position: absolute;
-    top: 35px;
-    left: -304px;
-    height: 290px;
+.margin_top{
+	margin-top: 205px !important;
 }
-.edit_action{
-    position: absolute;
-    top: 320px;
-    left: 600px;
+.first_page_cesi{
+	height: 150px !important;
+	background: rgba(255, 255, 255, 0.56) !important;
+}
+
+/* SLIDE THALES GROUPE */
+.dispatchWords p{
+	position: absolute !important;
+	top: 0px !important;
+	left: 0px !important;
+	padding: 3px;
+}
+
+p.defense{
+	left : 200px !important;
+	top: 350px !important;
+}
+p.space{
+	top: 200px !important;
+	left : 400px !important;
+}
+p.secu, p.aero{
+	top: 180px !important;
+}
+p.aero{
+	left: 700px !important;
+}
+p.terre{
+	top: 400px !important;
+	left : 600px !important;
+}
+
+/* SLIDE TUS TAS */
+.tsa_tus img{
+	border: none !important;
+	box-shadow: none !important;
+	position: absolute !important;	
+	background: transparent !important;
+}
+
+.tsa{
+    top: -15px !important;
+    left: 45px !important;
+    margin-top: 0 !important;
+    height: 300px !important;
+}
+
+.tus{
+    height: 245px !important;
+    top: 0 !important;
+}
+
+.white_back{
+	text-align: center;
+}
+
+/* ACTEURS */
+.sap{
+    height: 170px;
+    border: none !important;
+    background: transparent !important;
+}
+
+/* SLIDE RESULTATS */
+
+.resultList{
+	list-style: none;
 }
 .rec_import{
 	position: absolute;
     top: 344px;
-    left: 26px;
+    left: 259px;
     height: 290px;
+    border-width: 3px !important;
 }
 
-/* SLIDE CONCLUSION */
-.apside{
-    height: 113px;
+
+/* SLIDE SCHEMA */
+.fixeSection img{
+    position: fixed;
+    top: 78px;
+    left: 162px;
     border: none !important;
-    box-shadow: none !important;
-}
-
-.footer{
-    position: absolute;
-	bottom: 0;
-	width: 100%;
-	height: 70px;
-    background-color: rgba(255, 255, 255, 0.38);
+    box-shadow: none !important
+    background: transparent !important;
+    background-color: transparent !important;
 }	
-.header{
-	display: none;
-    position: absolute;
-	top: 0;
-    font-family: "Lato", sans-serif;
-    width: 100%;
-    padding-top: 10px;
-    z-index: 1;
-    height: 40px;
-    background-color: rgba(255, 255, 255, 0.38);
+.fixeTitle{
+	position: fixed;
+    top: 45px;
+    left: 360px;
 }	
-.dark{
-    background-color: rgb(51, 51, 51);
-    color: #fbf8e8;
+
+.archi{
+	top: 20px !important;
 }
 
-.light{
-    background-color: rgba(255, 255, 255, 0.38);
-    color: #333333;
+.fixeSection img.fragment.visible:not(.current-fragment){
+	display: none !important;
+} 
+.reveal section img{
+	box-shadow: none !important;
 }
 
-.server_logos .item{
-	padding: 4px;
+/* SLIDE SCRUM */
+.scrum_schema{
+	position: fixed !important;
+	top: 125px !important;
+	left: 0px !important;
+	background: transparent !important;
+	border: none !important;
 }
-.server_logos .item img{
-	height: 200px;
-	box-shadow: none;
-	border: none;
+
+
+/* SLIDE JIRA */
+.jira_img{
+	top: 20px !important;
+	left: 60px !important;
+	height: 601px !important;
+}
+
+/* VERSION 2.0 */
+
+.rec_2_0 img{
+    position: absolute !important;
+	top: -25px !important;
+    height: 515px !important;
+    left: -85px !important;
+}
+
+.fol_admin{
+    top: 30px !important;
+    left: 130px !important;
+    height: 580px !important;
+}
+
+/* CE QUI A MANQUE */
+.web_img img{
+	position: absolute !important;
+	height: 450px !important;
+	left: 335px;
+	border: none !important;
+	background: transparent !important;
+}
+/* SLIDE BILAN PRO */
+.xp_pro{
+	padding-top: 70px;
+}
+.xp_pro .item .icon{
+	font-size: 60px;
+}
+
+.xp_pro .item.cubes, .xp_pro .item.ext, .xp_pro .item.code{
+	padding-left: 15px;
+}
+.xp_pro .item.book{
+	padding-left: 20px;
+}
+
+/* SLIDE BILAN PRO */
+.apside{
+	background: transparent !important;
+	border: none !important;
+	height: 80px;
 }

@@ -11,7 +11,8 @@
 		  src="https://code.jquery.com/jquery-3.1.1.min.js"
 		  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
 		  crossorigin="anonymous"></script>
-		<script src="js/semantic.min.js"></script>
+
+		<script src="lib/js/leap.min.js"></script>
 
 
 		<link rel="stylesheet" href="css/reveal.css">
@@ -19,6 +20,8 @@
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<script src="lib/js/semantic.min.js"></script>
 
 		<!-- Printing and PDF exports -->
 		<script>
@@ -30,6 +33,7 @@
 		</script>
 
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/general.css">
 	</head>
 	<body>
 		<header class="header light">
@@ -41,217 +45,223 @@
 				<div class="ui column three wide center aligned">			
 					2015-2017						
 				</div>
+
 			</div>
 		</header>
 		<div class="reveal">
 
 			<div class="slides">
-				<section data-background="img/backgrounds/city_thales.jpg">
-					<h2 class="name">Vincent Toullec</h2>
-					
-					<p class="sub_title_white">
-						Responsable Ingénierie Logicielle
-					</p>
-					<p  class="sub_title_white">
-						Tuteur : Stéphane LESVEN
-					</p>
+				<section  data-background="img/backgrounds/city_thales_3.png">
+					<div class="margin_top">					
+						<p class="sub_title_white">
+							Vincent Toullec
+						</p>
+						<p class="sub_title_white">
+							Responsable Ingénierie Logicielle
+						</p>
+						<p class="sub_title_white">
+							Tuteur : Stéphane LESVEN
+						</p>
+					</div>
+					<img class="first_page_cesi" data-src="img/logo_cesi.png">
+			
 				</section>
 
 				<section data-background="img/backgrounds/city_thales_2.jpg">
+					<h3>Sommaire</h3>
+						<div class="fragment">
+							<h4>Le groupe Thales</h4>
+						</div>
+						<div class="fragment">
+							<h4>Contexte du projet</h4>
+							<h4>Méthodes de travail</h4>
+						</div>
+						<div class="fragment">
+							<h4>Réalisation</h4>
+							<h4>Auto évaluation</h4>
+						</div>
+						<h4 class="fragment">Bilan</h4>
+				</section>
+				<section class="dispatchWords" data-background="img/backgrounds/city_thales_2.jpg">
 					<h2>Le groupe</h2>
-					
+					<div class="fragment">
+						<p class="white_back terre">Transport terrestre</p>
+						<p class="white_back space">Espace</p>
+						<p class="white_back aero">Aéronautique</p>
+						<p class="white_back secu">Sécurité</p>
+						<p class="white_back defense">Défense</p>
+					</div>
 				</section>
 
-				<section 	data-background="img/backgrounds/henry_nomy.png"
-							id="fragments" class="white_back">
-					<section class="white_back">	
-						<h2">Le site Henry Nomy</h2>
-					</section>
-					<section class="white_back">
-						<p>Deux filiales</p>
-						<ul>
-							<li>TSA</li>
-							<li>TUS</li>
-						</ul>	
-					</section>
-					<section class="white_back">
-						<h2>Customer Support Service</h2>
-						<h3 class="fragment">Service Ingénierie Industrielle</h3>
-						<div class="thales_css">
-							<div class="ui grid">
-								<div class="ui column four wide column"></div>
-								<div class="ui column four wide column"></div>
-								
-							</div>
+				<section data-background="img/backgrounds/henry_nomy.png" class="thalesHN white_back">	
+					<h2">Le site Henry Nomy</h2>
+				</section>
+				<section data-background="img/backgrounds/henry_nomy.png" class="tsa_tus">
+					<div class="ui centered grid">
+					  	<div class="sixteen wide tablet computer column">
+					  		<!-- <p class="white_back">Deux filiales</p> -->
+					  	</div>
+					  	<div class="six wide tablet eight wide computer column">
+						    <p data-fragment-index="1" class="fragment white_back">TSA</p>			  		
+					  	</div>
+						<div class="six wide tablet eight wide computer column">
+								<p data-fragment-index="2" class="fragment white_back" >TUS</p>
 						</div>
-					</section>
+						<div class="six wide tablet eight wide computer column">
+							<img data-fragment-index="1" class="tsa fragment noMax" data-src="img/rafale_2.png">
+						</div>
+						<div class="six wide tablet eight wide computer column">
+							<img data-fragment-index="2" class="fragment noMax tus" data-src="img/fregate_sigma.png">
+						</div>
+						<div class="six wide tablet eight wide computer column"></div>
+					</div>
+				</section>
+				<section data-background="img/backgrounds/henry_nomy.png">
+					<h2 class="white_back">Service Support Client</h2>
+					<h3 class="white_back fragment"> > Service Ingénierie Industrielle < </h3>
+					<div class="thales_css">
+						<div class="ui grid">
+							<div class="ui column four wide column"></div>
+							<div class="ui column four wide column"></div>
+						</div>
+					</div>
 				</section>
 				<section class="problematique">
-					<h2>Problématique</h2>
 					<h3>Maintenance évolutive et corrective d’un outil de pilotage multi-métier</h3>
 				</section>
-				<section>					
-						<h2>Réalisation</h2>
-						<ul>
-							<li class="fragment">Conception</li>
-							<li class="fragment">Développement</li>
-							<li class="fragment">Corrections</li>
-							<li class="fragment">Amélioration</li>
-						</ul>
+				<section>
+					<h3>Historique de l'application</h3>	
+					<p class="fragment">FOCUS Excel</p>
+					<p class="fragment">Pilote</p>
 				</section>
 				<section>
-					<section>
-						<h4>Conception Serveur</h4>
-						<div class="ui horizontal list server_logos">
-							<div class="item">
-								<img class="fragment" data-fragment-index="2" data-src="img/symfony.png">
-							</div>
-							<div class="item">
-								<img class="fragment" data-fragment-index="3" data-src="img/doctrine.jpg">
-							</div>
-							<div class="item">
-								<img class="fragment" data-fragment-index="3" data-src="img/php_mysql.png">
-							</div>
-							<div class="item">
-								<img class="fragment" data-fragment-index="4" data-src="img/twig_logo.png">
-							</div>
+					<h3>Besoin métier</h3>
+			    	<p class="fragment">Consultation d'encours</p>
+					<p class="fragment">Données de pilotage</p>
+					<p class="fragment">Filtrage des données</p>
+					<p class="fragment">Champs calculés</p>
+				</section>
+
+				<section>
+					<h3 >Méthode de travail</h3>	
+					<h4>AGILE / SCRUM</h4>
+				</section>
+				<section class="">
+					<div class="ui grid">
+						<div class="ui column sixteen wide">
 						</div>
-					</section>
-
-					<section>
-						<h4>Conception navigateur</h4>
-						<div class="ui horizontal list server_logos">
-							<div class="item">
-								<img class="fragment" data-fragment-index="1" data-src="img/bootstrap.png">
-							</div>
-							<div class="item">
-								<img class="fragment" data-fragment-index="2" data-src="img/jQuery.png">
-							</div>
-							<div class="item">
-								<img class="fragment" data-fragment-index="3" data-src="img/html_logo.png">
-							</div>
+						<div class="ui column sixteen wide">
+							<img class="scrum_schema" data-src="img/schema/scrum/scrum_1.png">
+							<img class="scrum_schema fragment" data-src="img/schema/scrum/scrum_2.png">
+							<img class="scrum_schema fragment" data-src="img/schema/scrum/scrum_3.png">
+							<img class="scrum_schema fragment" data-src="img/schema/scrum/scrum_4.png">							
 						</div>
-					</section>
-
-				</section>
-					
-				</section>
-					<section data-state="support">
-						<h3>Support utilisateur</h3>
-						<div class="ui grid">
-							<div class="ui column one wide"></div>
-							<div class="ui column seven wide">
-								<img data-src="img/screens/fol_bug.png">
-							</div>
-							<div class="ui column seven wide">
-								<img data-action="zoom" data-src="img/screens/fol_evolution.png">
-							</div>
-							<div class="ui column one wide"></div>
-
-						</div>
-					</section>
-				</section>
-				<section class="fragments">
-					<section>
-						<h2>Auto évaluation</h2>
-					</section>
-
-					<section>
-						<h2>Ce qui a bien été fait</h2>
-						<ul>
-							<li class="fragment">10 versions de l’application en deux ans</li>
-							<li class="fragment">Plus d’une centaine d’utilisateurs</li>
-							<li class="fragment">Des utilisateurs satisfaits</li>
-							<li class="fragment">Un référentiel documentaire</li>
-						</ul>
-					</section>	
-					<section>					
-						<h2>Ce qui a manqué</h2>
-						<ul>
-							<li class="fragment">Impliquer plus les utilisateurs</li>
-							<li class="fragment">Faire ressortir la plus value</li>
-						</ul>
-					</section>
-
+					</div>
 				</section>
 
+				<section>	
+					<h2>Réalisation</h2>
+				</section>
+				<section>
+					<h4 class="fixeTitle">Architecture</h4>
+					<div class="fixeSection">
+						<img class="archi" data-src="img/schema/schema_etape_1.png">
+						<img class="fragment archi" data-src="img/schema/schema_etape_2.png">
+						<img class="fragment archi" data-src="img/schema/schema_etape_3.png">
+						<img class="fragment archi" data-src="img/schema/schema_etape_4.png">
+						<img class="fragment archi" data-src="img/schema/schema_etape_5.png">
+						<img class="fragment archi" data-src="img/schema/schema_etape_6.png">
+						<img class="fragment archi" data-src="img/schema/schema_etape_7_1.png">
+						<img class="fragment archi" data-src="img/schema/schema_etape_7_2.png">
+						<img class="fragment archi" data-src="img/schema/schema_etape_7_3.png">
+						<img class="fragment archi" data-src="img/schema/schema_etape_8.png">
+						<img class="fragment archi"  data-src="img/schema/schema_etape_9.png">
+					</div>
+				</section>
+
+				<section>
+					<h3>Les résultats</h3>	
+					<ul class="resultList">
+						<li class="fragment" data-fragment-index="2">Synthèse d'une réparation</li>
+						<li class="fragment" data-fragment-index="3">Mails automatiques quotidiens</li>
+						<li class="fragment" data-fragment-index="4">Données de pilotage supplémentaires</li>
+					</ul>	
+					<img class="fragment rec_import" data-fragment-index="2" data-src="img/screens/spt_graph.png">
+					<img class="fragment rec_import" data-fragment-index="4" data-src="img/screens/edit_action.png">
+					<img class="fragment rec_import" data-fragment-index="5" data-src="img/screens/rec_import.png">
+				</section>
+				<section class="rec_2_0">
+					<img class="noMax" data-src="img/schema/rec_conf_1.png">
+					<img class="noMax fragment" data-src="img/schema/rec_conf_2.png">	
+					<img class="noMax fragment" data-src="img/schema/rec_conf_4.png">	
+					<img class="noMax fragment" data-src="img/schema/rec_conf_3.png">	
+					<img class="noMax fragment" data-src="img/schema/rec_conf_5.png">	
+				</section>
+				<section>
+					<div class="fixeSection">
+						<img class="fol_admin" data-src="img/screens/fol_req_1.png">
+						<img class="fragment fol_admin" data-src="img/screens/fol_req_2.png">
+						<img class="fragment fol_admin" data-src="img/screens/fol_req_3.png">
+					</div>	
+				</section>
+				<section>
+					<h3>Version 2.0</h3>
+					<p class="fragment">ERP France</p>
+					<p class="fragment">Données de pilotage administrables</p>
+					<p class="fragment">Grille de résultats personnalisable</p>
+				</section>
+				<section>
+					<h2>Auto évaluation</h2>
+				</section>
+
+				<section>
+					<h2>Les points positifs</h2>
+					<p class="fragment">Dix versions</p>
+					<p class="fragment">Plus de cent utilisateurs</p>
+					<p class="fragment">Performances améliorées</p>
+				</section>	
+				<section class="web_img">					
+					<h2>Ce qui a manqué</h2>
+					<p class="fragment">Impliquation des utilisateurs</p>
+					<p class="fragment">Faire ressortir la plus value</p>
+					<img class="fragment" data-src="img/web/web_0.png">
+				</section>
 				<!-- PARTIE INITIATIVE -->
 				<section>
-					<h3>Prise d’initiative</h3>	
-					<ul>
-						<li>Le sondage</li>
-						<li>Les relectures de code</li>
-						<li>Des développements tardifs </li>
-					</ul>
+					<h3>Un point "central"</h3>	
+					<p class="fragment">Sondage</p>
+					<p class="fragment">Relectures de code</p>
+					<p class="fragment">Développements tardifs</p>
 				</section>
-
 				<section>
-					<section>
-						<h3>Les avantages de FOL</h3>
-						<ul>
-							<li class="fragment" data-fragment-index="1">Des fonctionnalités inédites</li>
-							<li class="fragment" data-fragment-index="2">Synthèse d'une réparation</li>
-							<li class="fragment" data-fragment-index="3">Mails automatiques quotidiens</li>
-							<li class="fragment" data-fragment-index="4">Données de pilotage supplémentaires</li>
-						</ul>	
-						<img class="fragment spt_graph" data-fragment-index="2" data-src="img/screens/spt_graph.png">
-						<img class="fragment edit_action" data-fragment-index="5" data-src="img/screens/edit_action.png">
-						<img class="fragment rec_import" data-fragment-index="5" data-src="img/screens/rec_import.png">
-					</section>
-					<section>
-						<h3>Version 2.0</h3>
-						<p class="fragment">Adaptation à tout type de base mysql</p>
-						<p class="fragment">Données de pilotage administrables</p>
-						<p class="fragment">Grille de résultats personnalisables</p>
-	
-					</section>
+					<h2>Bilan</h2>
 				</section>
-
 				<section>
-					<section>	
-						<h3>Coach technique</h3>
-						<h4 class="fragment">Tâches attribués</h4>
-						<ul>
-							<li class="fragment">Analyse de la conception</li>
-							<li class="fragment">Relecture des documents</li>
-							<li class="fragment">Assistance technique</li>
-						</ul>	
-					</section> 
-
-					<section>
-						<h4>Ne pas reproduire les mêmes erreurs que pour FOL</h4>
-						<ul>
-							<li class="fragment">Éviter la dette technique !</li>
-							<li class="fragment">Coder trop tôt / trop vite</li>
-							<li class="fragment">Tests automatiques</li>
-						</ul>	
-					</section>	
+					<h3>Personnel</h3>
+					<p>
+						<div class="ui horizontal list xp_pro fragment">
+							<div class="item conf">
+								<i class="grey configure icon"></i>
+							</div>
+							<div class="item code">
+								<i class="orange code icon"></i>
+							</div>
+							<div class="item ext">
+								<i class="blue external icon"></i>
+							</div>
+							<div class="item cubes">
+								<i class="green cubes icon"></i>
+							</div>
+							<div class="item book">
+								<i class="teal book icon"></i>
+							</div>
+						</div>
+					</p>
 				</section>
-
 				<section>
-					<section>
-						
-						<h2>Conclusion</h2>
-					</section>
-					<section>
-						<h3>Bilan Personnel</h3>
-
-						<ul>
-							<li class="fragment">Expérience professionnelle</li>
-							<li class="fragment">Concepteur / Développeur / Intégrateur / Testeur</li>
-							<li class="fragment">Assistant technique</li>
-						</ul>
-					</section>
-
-					<section>
-						<h3>Avenir professionnel</h3>
-						<ul>
-							<li class="fragment" data-fragment-index="1">CDI signé</li>
-							<li class="fragment">Concepteur / Développeur / Intégrateur / Testeur</li>
-							<li class="fragment">Assistant technique</li>
-						</ul>
-						<img class="fragment spt_graph apside" data-fragment-index="1" data-src="img/apside_logo.png">
-					</section>
+					<h3>Avenir professionnel</h3>
+					<img data-src="img/apside.png" class="apside fragment">
+					<p class="fragment">Chef de projet</p>
 				</section>
 
 				<section>
@@ -264,8 +274,6 @@
 				</section>
 			</div>
 		</div>
-
-
 		<footer class="footer">
 			<div class="ui grid">
 				<div class="ui column one wide">
@@ -283,107 +291,6 @@
 
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.js"></script>
-
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/zoom-js/zoom.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				],
-				controls : false,
-				slideNumber: 'c/t'
-
-			});
-			console.log(Reveal.getIndices());
-			console.log(Reveal.getTotalSlides());
-
-			Reveal.addEventListener( 'somestate', function(e) {
-				// TODO: Sprinkle magic
-				console.log('truc de ouf');
-				console.log(e);
-
-			} );
-
-
-			$(document).ready(function() {
-				$('.totalPages').html(Reveal.getTotalSlides());
-			
-
-	
-				$(this).keyup(function(e) {
-				    if(e.shiftKey){
-						if ($('#search').is(':visible')){
-							$('#search').hide('fade');
-						}else{
-							$('#search').show('fade');
-						}
-
-					 }
-				    //alert('hello world');
-				});
-				
-				$('#search').keyup(function(event) {
-					if (event.keyCode == 13){
-						console.log($(this).val());
-						Reveal.slide($(this).val());
-					}
-				});
-
-			});
-
-
-			var state;
-			var currentPage = 1;
-			var headerDarkIndex;
-			Reveal.addEventListener( 'slidechanged', function( event ) {
-					state = Reveal.getState();
-					
-					slide = event.currentSlide;
-					
-					controlDesign(state);
-					// Changement de couleur du header
-					headerDarkIndex = controlHeaderChange(slide, state, headerDarkIndex);
-					
-
-				// event.previousSlide, event.currentSlide, event.indexh, event.indexv
-			} );
-
-			function controlDesign(state){
-				if ( state.indexh > 0){
-					$('#logo_thales').show();
-					$('.header').show();
-				}else if(state.indexh == 0){
-					$('.header').hide();
-				}
-			}
-
-
-
-			function controlHeaderChange(slide, state, index){
-				if ($(slide).hasClass('problematique')){
-					index = state;
-					if (index >= state){
-						switchHeaderClass();							
-					}
-				}
-				return index;
-			}
-
-			function switchHeaderClass(){
-				if ($('.header').hasClass('dark')){
-					$('.header').addClass('light');
-					$('.header').removeClass('dark');
-				}else{
-					$('.header').addClass('dark');
-					$('.header').removeClass('light');
-				}
-			}
-		</script>
+		<script src="js/scripts.js"></script>
 	</body>
 </html>

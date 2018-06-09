@@ -1,0 +1,45 @@
+/* SLIDE CONCLUSION */
+.footer{
+    position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 70px;
+    background-color: rgba(255, 255, 255, 0.38);
+    display: none;
+}	
+.header{
+	display: none;
+    position: absolute;
+	top: 0;
+    font-family: "Lato", sans-serif;
+    width: 100%;
+    padding-top: 10px;
+    z-index: 1;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.38);
+}
+
+.dark{
+    background-color: rgb(51, 51, 51);
+    color: #fbf8e8;
+}
+
+.light{
+    background-color: rgba(255, 255, 255, 0.38);
+    color: #333333;
+}
+
+/* IMAGES */
+.noMax{
+    max-width: none !important;
+    max-height: none !important;
+}
+
+/* SLIDE NUMBER */
+.reveal .slide-number{
+    font-size: 20px !important;
+}
+/*
+#reveal-leap-motion{
+    display: none !important;
+}*/

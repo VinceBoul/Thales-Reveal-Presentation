@@ -1,0 +1,20 @@
+
+
+
+SVN
+
+Futur
+Embauché
+Cesi : découverte de nouvelles technologies 
+	envie d'apprendre de nouvelles choses
+
+
+Présentation de l'existant : 
+	- Pourquoi l'améliorer ?
+	- Technologies actuels : le web c'est cool
+	
+Corriger image rafale
+Page acteurs à supprimer
+compléter schéma architecture :
+	- sortir la BDD 
+	- ajouter SAP + INFO CENTRE
