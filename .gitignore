@@ -11,3 +11,9 @@ node_modules/
 .sass-cache
 css/reveal.min.css
 js/reveal.min.js
+/img/screens
+/img/jira_stories.png
+/img/jira_stories_2.png
+/img/jira_stories_3.png
+/img/jira_stories_4.png
+/img/schema
