@@ -7,58 +7,15 @@
 					{ src: 'plugin/markdown/markdown.js' },
 					{ src: 'plugin/notes/notes.js', async: true },
 					{ src: 'plugin/zoom-js/zoom.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-			        { src: 'plugin/reveal-leap-motion/reveal-leap-motion.min.js', async: true }
-
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
 				],
 				controls : false,
 				slideNumber: 'c/t',
-				showNotes: true,
-
-				"reveal-leap-motion": {
-				    naturalSwipe: true,     // Invert swipe gestures
-				    gestureDelay: 1000,
-				    pointerColor: '#d80000', // Red pointer
-				    pointerOpacity: 0,     // Set pointer opacity to 0.5
-				    autoCenter: true,
-				    pointerSize: 15,
-				    pointerTolerance: 80
-				},
-
+				showNotes: true
 			});
-			console.log(Reveal.getIndices());
-			console.log(Reveal.getTotalSlides());
-
-			Reveal.addEventListener( 'somestate', function(e) {
-				// TODO: Sprinkle magic
-				console.log('truc de ouf');
-				console.log(e);
-
-			} );
-
 
 			$(document).ready(function() {
 				$('.totalPages').html(Reveal.getTotalSlides());
-			
-
-	
-				$(this).keyup(function(e) {
-				    if(e.shiftKey){
-						if ($('#search').is(':visible')){
-							$('#search').hide('fade');
-						}else{
-							$('#search').show('fade');
-						}
-					 }
-				});
-				
-				$('#search').keyup(function(event) {
-					if (event.keyCode == 13){
-						console.log($(this).val());
-						Reveal.slide($(this).val());
-					}
-				});
-
 			});
 
 			var currentPage = 1;
@@ -68,15 +25,17 @@
 					// Changement de couleur du header
 					console.log(event.currentSlide);
 					changeBackground(event.currentSlide);
-					headerDarkIndex = controlHeaderChange(event.currentSlide, Reveal.getState(), headerDarkIndex);
-
-
-				// event.previousSlide, event.currentSlide, event.indexh, event.indexv
-			} );
+					headerDarkIndex = controlHeaderChange(event.currentSlide, headerDarkIndex);
+					console.log(headerDarkIndex);
+			});
 
 			function changeBackground(slide){
 				if ($(slide).hasClass('thalesHN')){
 					console.log('On y est');
+				} else if ($(slide).hasClass('problematique')){
+					console.log('On y est 2');
+
+					switchHeaderClass();								
 				}
 			}
 
@@ -91,10 +50,10 @@
 				}
 			}
 
-			function controlHeaderChange(slide, state, index){
+			function controlHeaderChange(slide, index){
 				if ($(slide).hasClass('problematique')){
-					index = state;
-					if (index >= state){
+					index = Reveal.getState();
+					if (index >= Reveal.getState()){
 						switchHeaderClass();							
 						//switchFooterClass();
 					}
@@ -107,6 +66,7 @@
 					$('.header').addClass('light');
 					$('.header').removeClass('dark');
 				}else{
+					console.log('hey');
 					$('.header').addClass('dark');
 					$('.header').removeClass('light');
 				}
