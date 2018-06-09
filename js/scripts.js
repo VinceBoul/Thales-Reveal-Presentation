@@ -62,14 +62,9 @@
 			}
 
 			function switchHeaderClass(){
-				if ($('.header').hasClass('dark')){
 					$('.header').addClass('light');
 					$('.header').removeClass('dark');
-				}else{
-					console.log('hey');
-					$('.header').addClass('dark');
-					$('.header').removeClass('light');
-				}
+				
 			}
 
 			function switchFooterClass(){
