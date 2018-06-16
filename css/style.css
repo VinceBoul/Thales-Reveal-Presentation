@@ -53,22 +53,26 @@
 }
 
 p.defense{
-	left : 200px !important;
+	left : 100px !important;
 	top: 350px !important;
 }
 p.space{
 	top: 200px !important;
-	left : 400px !important;
+	left : 293px !important;
 }
 p.secu, p.aero{
 	top: 180px !important;
 }
 p.aero{
-	left: 700px !important;
+	left: 785px !important;
 }
 p.terre{
 	top: 400px !important;
-	left : 600px !important;
+	left : 430px !important;
+}
+p.act{
+    top: 300px !important;
+    left: 670px !important;
 }
 
 /* SLIDE TUS TAS */
