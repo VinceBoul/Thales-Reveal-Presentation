@@ -83,6 +83,9 @@ p.act{
     top: -60px !important;
     left: 15px;
 }
+.strategie p{
+	font-size: 30px !important;
+}
 .white_back{
 	text-align: center;
 }
