@@ -4,9 +4,6 @@
  * reveal.js is Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
  */
 
-<link href='http://fonts.googleapis.com/css?family=Megrim' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Raleway:300,400,700' rel='stylesheet' type='text/css'>
-
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
@@ -30,7 +27,7 @@ body {
   font-weight: inherit; }
 
 .reveal {
-  font-family: "Raleway";
+    font-family: "Times New Roman", Times, serif;
   font-size: 1.5em;
   font-weight: normal;
   color: #46ACC8; }
@@ -46,7 +43,7 @@ body {
 .reveal h6 {
   margin: 0 0 20px 0;
   color: #46ACC8;
-  font-family: "Megrim", cursive;
+    font-family: "Times New Roman", Times, serif;
   font-weight: normal;
   line-height: 1.2;
   letter-spacing: normal;
@@ -68,7 +65,7 @@ body {
 
 .reveal p {
 	color: #DD8D29;
-	font-family: 'Raleway', sans-serif;
+    font-family: "Times New Roman", Times, serif;
 	text-align: right;
 	text-indent: 50px;
 	font-size: 0.70em;
