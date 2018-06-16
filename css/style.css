@@ -75,26 +75,14 @@ p.act{
     left: 670px !important;
 }
 
-/* SLIDE TUS TAS */
-.tsa_tus img{
-	border: none !important;
-	box-shadow: none !important;
-	position: absolute !important;	
-	background: transparent !important;
+.carto{
+    height: 550px !important;
+    position: absolute;
+    width: 940px;
+    max-height: 1000px ! important;
+    top: -60px !important;
+    left: 15px;
 }
-
-.tsa{
-    top: -15px !important;
-    left: 45px !important;
-    margin-top: 0 !important;
-    height: 300px !important;
-}
-
-.tus{
-    height: 245px !important;
-    top: 0 !important;
-}
-
 .white_back{
 	text-align: center;
 }
