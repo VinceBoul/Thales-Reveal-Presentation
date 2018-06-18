@@ -44,6 +44,6 @@
     display: none !important;
 }*/
 
-.problematique h3{
+.problematique h3, .underline h2{
     text-decoration: underline;
 }
