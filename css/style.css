@@ -178,6 +178,12 @@ p.act{
 	border: none !important;
 	background: transparent !important;
 }
+.align-left p{
+	text-align: left;
+    font-size: 25px;
+    line-height: 25px;
+}
+
 /* SLIDE BILAN PRO */
 .xp_pro{
 	padding-top: 70px;
